@@ -11,7 +11,7 @@ with DAG(dag_id="git_sync",
          catchup=False) as dag:
     
     task1 = PythonOperator(
-            task_id="hello_world",
+            task_id="git_sync_task",
             python_callable=helloWorld)
 
 task1
