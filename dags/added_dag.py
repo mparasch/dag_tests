@@ -12,7 +12,7 @@ with DAG(dag_id="test_add",
          catchup=False) as dag:
     
     task1 = PythonOperator(
-            task_id="test_add",
+            task_id="first_task",
             python_callable=helloWorld)
 
 task1
